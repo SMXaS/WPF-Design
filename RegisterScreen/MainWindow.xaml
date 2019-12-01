@@ -6,16 +6,18 @@
         xmlns:local="clr-namespace:RegisterScreen"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="380"
-        AllowsTransparency="True" Background="Transparent"
-        WindowStyle="None">
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        >
+
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="108*"/>
+                <RowDefinition Height="109*"/>
             </Grid.RowDefinitions>
 
-            <Border CornerRadius="10" Grid.RowSpan="2" Margin="-10,0,10,0">
+            <Border CornerRadius="10" Grid.RowSpan="2">
                 <Border.Background>
                     <LinearGradientBrush>
                         <GradientStop Color="#7be9f6" Offset="0.0"/>
@@ -34,7 +36,7 @@
                            Background="Transparent"
                            Width="160"
                            Opacity="0.8"
-                           
+                           GotKeyboardFocus="text_Change"
                            
                     />
 
@@ -46,11 +48,12 @@
                 <PasswordBox FontFamily="Helvetica"
                            FontWeight="UltraLight"
                            FontSize="30"
-                          Password="PASSWORD"
+                           Password="PASSWORD"
                            Foreground="White"
                            Background="Transparent"
                            Width="160"
                            Opacity="0.8"
+                           
                            
                            
                     />
@@ -60,7 +63,7 @@
                        Height="2"
                        Background="White"
                        Opacity="0.8"/>
-                
+
                 <Button Width="100" Height="40" 
                         Content="LOGIN" 
                         Margin="60,60,60,0" 
@@ -69,8 +72,9 @@
                         FontSize="20" 
                         FontWeight="UltraLight"
                         Foreground="White"
-                        BorderBrush="Transparent"/>
-                      
+                        BorderBrush="Transparent"
+                        Click="button_Click"/>
+
             </StackPanel>
 
         </Grid>

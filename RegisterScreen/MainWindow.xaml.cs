@@ -23,6 +23,26 @@ namespace RegisterScreen
         public MainWindow()
         {
             InitializeComponent();
+            int username;
         }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You have loged in");
+        }
+
+        private void text_Change(object sender, EventArgs e)
+        {
+                TextBox txtBox = sender as TextBox;
+                if (txtBox.Text == "USERNAME")
+                    txtBox.Text = string.Empty;
+            }
+
+        ////private void text_Change2(object sender, EventArgs e)
+        //{
+        //    PasswordBox passwordBox = sender as PasswordBox;
+        //    if (passwordBox.Equals()
+        //        passwordBox.Text = string.Empty;
+        //}
     }
 }
