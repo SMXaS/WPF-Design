@@ -35,26 +35,6 @@ namespace RegisterScreen
             }
 
 
-
-        //private void text_Change2(object sender, EventArgs e)
-        //{
-            
-
-        //    //MessageBox.Show("Done"); 
-        //}
-
-        //private void user_Input()
-        //{
-        //    if (!String.IsNullOrWhiteSpace(Username.Text.Trim()) && !String.IsNullOrWhiteSpace(Password.Password.Trim()))
-        //    {
-        //        canProceedUserPass = true;
-        //    }
-        //    else
-        //    {
-        //        canProceedUserPass = false;
-        //        MessageBox.Show("You haven't filled out all the required fields.");
-        //    }
-        //}
         private void button_Click(object sender, EventArgs e)
         {
            
