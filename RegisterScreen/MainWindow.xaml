@@ -17,7 +17,7 @@
                 <RowDefinition Height="109*"/>
             </Grid.RowDefinitions>
 
-            <Border CornerRadius="10" Grid.RowSpan="2">
+            <Border CornerRadius="1" Grid.RowSpan="2">
                 <Border.Background>
                     <LinearGradientBrush>
                         <GradientStop Color="#7be9f6" Offset="0.0"/>
@@ -29,48 +29,50 @@
             <StackPanel Margin="0,166,0,0" Grid.RowSpan="2">
 
                 <TextBox FontFamily="Helvetica"
-                           FontWeight="ExtraLight"
+                         Name="Username"
+                           FontWeight="SemiBold"
                            FontSize="30"
                            Text="USERNAME"
                            Foreground="White"
                            Background="Transparent"
-                           Width="160"
+                           Width="164"
                            Opacity="0.8"
                            GotKeyboardFocus="text_Change"
-                           
-                    />
+                         
+                         >
+                </TextBox>
 
-                <Border Width="170"
+
+                <Border Width="240"
                         HorizontalAlignment="Center"
                        Height="2"
                        Background="White"
                        Opacity="0.8"/>
                 <PasswordBox FontFamily="Helvetica"
-                           FontWeight="UltraLight"
+                             Name="Password"
+                           FontWeight="SemiBold"
                            FontSize="30"
                            Password="PASSWORD"
                            Foreground="White"
                            Background="Transparent"
                            Width="160"
-                           Opacity="0.8"
-                           
-                           
-                           
+                           Opacity="0.8" GotFocus="Password_GotFocus"
+                               
                     />
 
-                <Border Width="170"
+                <Border Width="240"
                         HorizontalAlignment="Center"
                        Height="2"
                        Background="White"
                        Opacity="0.8"/>
 
-                <Button Width="100" Height="40" 
+                <Button Width="113" Height="51" 
                         Content="LOGIN" 
                         Margin="60,60,60,0" 
                         Background="Transparent" 
                         BorderThickness="2" 
-                        FontSize="20" 
-                        FontWeight="UltraLight"
+                        FontSize="30" 
+                        FontWeight="SemiBold"
                         Foreground="White"
                         BorderBrush="Transparent"
                         Click="button_Click"/>

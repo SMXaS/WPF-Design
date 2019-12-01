@@ -23,26 +23,49 @@ namespace RegisterScreen
         public MainWindow()
         {
             InitializeComponent();
-            int username;
+            
         }
 
+       
+        private void text_Change(object sender, EventArgs e)
+        {
+           
+                if (Username.Text == "USERNAME")
+                    Username.Text = string.Empty;
+            }
+
+
+
+        //private void text_Change2(object sender, EventArgs e)
+        //{
+            
+
+        //    //MessageBox.Show("Done"); 
+        //}
+
+        //private void user_Input()
+        //{
+        //    if (!String.IsNullOrWhiteSpace(Username.Text.Trim()) && !String.IsNullOrWhiteSpace(Password.Password.Trim()))
+        //    {
+        //        canProceedUserPass = true;
+        //    }
+        //    else
+        //    {
+        //        canProceedUserPass = false;
+        //        MessageBox.Show("You haven't filled out all the required fields.");
+        //    }
+        //}
         private void button_Click(object sender, EventArgs e)
         {
+           
+
             MessageBox.Show("You have loged in");
         }
 
-        private void text_Change(object sender, EventArgs e)
+        private void Password_GotFocus(object sender, RoutedEventArgs e)
         {
-                TextBox txtBox = sender as TextBox;
-                if (txtBox.Text == "USERNAME")
-                    txtBox.Text = string.Empty;
-            }
-
-        ////private void text_Change2(object sender, EventArgs e)
-        //{
-        //    PasswordBox passwordBox = sender as PasswordBox;
-        //    if (passwordBox.Equals()
-        //        passwordBox.Text = string.Empty;
-        //}
+            if (Password.Password == "PASSWORD")
+                Password.Clear();
+        }
     }
 }
